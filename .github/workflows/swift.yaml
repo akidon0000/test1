@@ -17,4 +17,4 @@ jobs:
           sudo apt-get install -y swift
 
       - name: Run Custom Swift Action
-        uses: akidon0000/sample-custom-actions-by-swift@v1
+        uses: akidon0000/sample-custom-actions-by-swift@1.0.0
