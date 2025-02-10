@@ -1,0 +1,19 @@
+name: swift
+on:
+    workflow_dispatch:
+
+
+jobs:
+  sync-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Swift
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y swift
+
+      - name: Run Custom Swift Action
+        uses: akidon0000/sample-custom-actions-by-swift@v1
